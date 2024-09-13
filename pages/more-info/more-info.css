@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.back-arrow {
+    /* position: absolute; */
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: all 0.1s;
+}
+
+#more-info-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+#more-info-header a{
+    justify-self: center;
+}
+
+#more-info-header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#book-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#reviews-section {
+    margin-top: 40px;
+}
+
+#reviews-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#add-review-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#add-review-form button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #6A9CFD;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #236dfc;
+}
+
+#add-review-form button:hover {
+    background-color: #236dfc;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .back-arrow {
+        top: 5px;
+        left: 5px;
+        font-size: 18px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #book-details img {
+        width: 60%; 
+    }
+
+    #add-review-form textarea {
+        height: 80px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .back-arrow {
+        font-size: 16px;
+    }
+
+    main {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #book-details img {
+        width: 60%; 
+    }
+
+    #add-review-form textarea {
+        height: 60px;
+    }
+
+    #add-review-form button {
+        padding: 6px 12px;
+        font-size: 12px; 
+    }
+}
+

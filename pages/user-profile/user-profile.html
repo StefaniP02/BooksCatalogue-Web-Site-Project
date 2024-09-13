@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="./user-profile.css">
+    <link rel="stylesheet" href="../../variables.css">
+</head>
+<body>
+    <header id="header-user-profile">
+        <a href="../booksCatalogue/booksCatalogue.html" class="back-arrow">&#8592; Back to Catalogue</a>
+        <h1>User Profile</h1>
+        <div id="auth-buttons"></div>
+    </header>
+    <main id="main-user-profile">
+        <div class="profile-container">
+            <div class="profile-picture-container">
+                <img id="profile-picture" src="../../images/blank-profile-picture-973460_960_720.webp" alt="Profile Picture">
+                <input type="file" id="profile-picture-input" style="display: none;">
+                <button id="upload-profile-picture-btn">Upload New Picture</button>
+                <button id="reset-profile-picture-btn">Reset Profile Picture</button>
+            </div>
+            <div class="profile-details">
+                <form id="profile-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" readonly>
+
+                    <label for="username">Username:</label>
+                    <div>
+                        <input type="text" id="username" placeholder="Enter username">
+                        <button type="button" onclick="deleteField('username')">Clear</button>
+                    </div>
+
+                    <label for="name">Name:</label>
+                    <div>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <button type="button" onclick="deleteField('name')">Clear</button>
+                    </div>
+
+                    <label for="age">Age:</label>
+                    <div>
+                        <input type="number" id="age" placeholder="Enter your age">
+                        <button type="button" onclick="deleteField('age')">Clear</button>
+                    </div>
+
+                    <label for="info">Information:</label>
+                    <div>
+                        <textarea id="info" placeholder="Tell us about yourself"></textarea>
+                        <button type="button" onclick="deleteField('info')">Clear</button>
+                    </div>
+
+                    <button id="save-profile-button" type="submit">Save Profile</button>
+                </form>
+            </div>
+        </div>
+        <button id="delete-profile-btn">Delete Profile</button>
+        <div class="user-books">
+            <h2>Your Added Books</h2>
+            <div id="user-book-list"></div>
+        </div>
+    </main>
+    <script src="./user-profile.js"></script>
+</body>
+</html>

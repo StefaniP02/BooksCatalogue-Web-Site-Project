@@ -1,0 +1,247 @@
+html {
+    height: 100%;
+}
+
+#header-user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: all 0.1s;
+}
+
+#header-user-profile a:hover {
+    text-decoration: underline;
+}
+
+#main-user-profile {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture-container {
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 10px solid;
+    border-color: white;
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.profile-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+#profile-form input,
+#profile-form textarea {
+    padding: 10px;
+    border: 1px solid #6A9CFD;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 500px;
+}
+
+.profile-details form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.user-books h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#user-book-list .book {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#user-book-list .book img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+#user-book-list .book h3 {
+    margin: 0;
+}
+
+#upload-profile-picture-btn,
+#save-profile-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #6A9CFD;
+    border-color: #236dfc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#save-profile-button {
+    width: 100px;
+    align-self: center;
+}
+
+#upload-profile-picture-btn:hover,
+#save-profile-button:hover {
+    background-color: #236dfc;
+}
+
+.profile-details form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #6A9CFD;
+    border-color: #236dfc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #236dfc;
+}
+
+#delete-profile-btn {
+    background-color: red;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+#delete-profile-btn:hover {
+    background-color: darkred;
+}
+
+#info {
+    resize: none;
+}
+
+
+@media (max-width: 768px) {
+    #header-user-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-arrow {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    #header-user-profile h1 {
+        font-size: 20px;
+    }
+
+    #profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    #profile-form input,
+    #profile-form textarea {
+        width: 100%;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-picture-container {
+        margin-bottom: 20px;
+    }
+
+    #user-book-list .book {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #user-book-list .book img {
+        width: 80px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header-user-profile h1 {
+        font-size: 18px;
+    }
+
+    #profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    #profile-form input,
+    #profile-form textarea {
+        font-size: 14px;
+    }
+
+    #upload-profile-picture-btn,
+    #save-profile-button,
+    #reset-profile-picture-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #delete-profile-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

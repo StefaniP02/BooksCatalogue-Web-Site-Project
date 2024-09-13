@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Catalogue</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="./booksCatalogue.css">
+    <link rel="stylesheet" href="../../variables.css">
+</head>
+<body>
+    <header id="header-book-catalogue">
+        <a href="./booksCatalogue.html" id="catalogue-title"><h1>BOOKS CATALOGUE</h1></a>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <form class="search-book-catalogue mobile-search">
+                        <input type="text" id="search-input" placeholder="Search for a book...">
+                    </form>
+                </li>
+                <li><a href="#" id="top-rated-link">Top 10 highest rated books</a></li>
+                <li><a href="#" id="top-popular-link">Top 10 most popular books</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+        </div>
+    </header>
+    <main id="main-book-catalogue">
+        <div id="book-list"></div>
+        <form class="add-book-form">
+            <h2>Add New Book</h2>
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="rating" placeholder="Rating (1-5)" required>
+            <input type="file" id="image" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </main>
+    <script src="./booksCatalogue.js"></script>
+</body>
+</html>

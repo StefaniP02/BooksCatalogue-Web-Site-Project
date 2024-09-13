@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="../../../reset.css">
+    <link rel="stylesheet" href="../signup-login.css">
+</head>
+<body>
+    <header class="header-signup-login">
+        <a href="../../booksCatalogue/booksCatalogue.html" class="back-arrow">&#8592; Back to Catalogue</a>
+        <h1>BOOK REVIEWS</h1>
+        <h2>Create Account</h2>
+    </header>
+    <main class="main-signup-login">
+        <form id="login-form" class="login-signup-form">
+
+            <p>Email</p>
+            <input class="input-signup-login" type="email" id="email" name="Email" required>
+
+            <p>Password</p>
+            <input minlength="6" class="input-signup-login" type="Password" id="password" name="password" placeholder="At least 6 characters" required>
+
+            <p>Re-enter password</p>
+            <input minlength="6" class="input-signup-login" type="password" id="re-enter-pass" name="re-pass" required>
+
+            <button type="submit" class="submit-button">Create Account</button>
+            <p class="redirect-information">Already have an account? <a class="redirect-link" href="../login/log-in.html">Log in</a></p>
+        </form>
+    </main>
+    <script src="./sign-up.js"></script>
+</body>
+</html>
