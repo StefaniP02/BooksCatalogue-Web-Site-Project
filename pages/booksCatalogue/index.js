@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.location.href += "pages/booksCatalogue/booksCatalogue.html";
+    window.location.href += "../booksCatalogue/booksCatalogue.html";
 })
